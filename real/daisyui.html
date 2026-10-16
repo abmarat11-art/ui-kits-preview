@@ -1,0 +1,29 @@
+<!doctype html><html lang="ru" data-theme="light"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>DaisyUI + Tailwind</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+</head><body class="bg-base-200 pb-24">
+<div class="navbar bg-base-100"><div class="flex-1"><span class="text-lg font-semibold px-2">Кошелёк</span></div>
+<div class="flex-none"><button class="btn btn-ghost btn-circle">🔔</button></div></div>
+<div class="p-4">
+<div role="tablist" class="tabs tabs-boxed"><a role="tab" class="tab tab-active">Месяц</a><a role="tab" class="tab">Квартал</a><a role="tab" class="tab">Год</a></div>
+<div class="stats bg-base-100 shadow w-full mt-4">
+<div class="stat"><div class="stat-title">Баланс по кассе</div><div class="stat-value text-3xl">4 820 000</div><div class="stat-desc text-success">↑ 12,4% к сентябрю</div></div></div>
+<div class="flex gap-3 mt-3"><div class="stats bg-base-100 shadow flex-1"><div class="stat p-4"><div class="stat-title text-xs">Приход</div><div class="stat-value text-xl">6,2 млн</div></div></div>
+<div class="stats bg-base-100 shadow flex-1"><div class="stat p-4"><div class="stat-title text-xs">Расход</div><div class="stat-value text-xl">1,4 млн</div></div></div></div>
+<h2 class="font-semibold mt-6 mb-2">Операции</h2>
+<div class="card bg-base-100 shadow"><div class="card-body p-0">
+<ul class="menu p-0">
+<li><a class="flex justify-between py-3"><span><b>Поступление от Argus</b><br><span class="text-xs opacity-60">Сегодня, 09:12</span></span><span class="badge badge-success badge-outline">+1 200 000</span></a></li>
+<li><a class="flex justify-between py-3"><span><b>Аренда офиса</b><br><span class="text-xs opacity-60">Вчера, 18:40</span></span><span class="badge badge-ghost">−850 000</span></a></li>
+<li><a class="flex justify-between py-3"><span><b>Подписка Figma</b><br><span class="text-xs opacity-60">14 октября</span></span><span class="badge badge-ghost">−186 000</span></a></li>
+<li><a class="flex justify-between py-3"><span><b>Возврат переплаты</b><br><span class="text-xs opacity-60">12 октября</span></span><span class="badge badge-success badge-outline">+94 000</span></a></li>
+</ul></div></div>
+<button class="btn btn-primary btn-block mt-4">Новая операция</button>
+</div>
+<div class="btm-nav btm-nav-sm bg-base-100">
+<button class="active text-primary"><span class="btm-nav-label">Главная</span></button>
+<button><span class="btm-nav-label">Операции</span></button>
+<button><span class="btm-nav-label">Отчёты</span></button>
+<button><span class="btm-nav-label">Профиль</span></button>
+</div></body></html>

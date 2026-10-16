@@ -1,0 +1,28 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ionic Framework</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@8/css/ionic.bundle.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@8/dist/ionic/ionic.esm.js"></script>
+</head><body>
+<ion-app>
+<ion-header translucent="true"><ion-toolbar><ion-title>Кошелёк</ion-title>
+<ion-buttons slot="end"><ion-button><ion-icon name="notifications-outline"></ion-icon></ion-button></ion-buttons></ion-toolbar>
+<ion-toolbar><ion-segment value="m"><ion-segment-button value="m">Месяц</ion-segment-button><ion-segment-button value="q">Квартал</ion-segment-button><ion-segment-button value="y">Год</ion-segment-button></ion-segment></ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding-vertical">
+<ion-card><ion-card-header><ion-card-subtitle>Баланс по кассе</ion-card-subtitle><ion-card-title>4 820 000 сум</ion-card-title></ion-card-header>
+<ion-card-content><ion-chip color="success">↑ 12,4% к сентябрю</ion-chip></ion-card-content></ion-card>
+<ion-list-header>Последние операции</ion-list-header>
+<ion-list inset="true">
+<ion-item><ion-label><h2>Поступление от Argus</h2><p>Сегодня, 09:12</p></ion-label><ion-note slot="end" color="success">+1 200 000</ion-note></ion-item>
+<ion-item><ion-label><h2>Аренда офиса</h2><p>Вчера, 18:40</p></ion-label><ion-note slot="end">−850 000</ion-note></ion-item>
+<ion-item><ion-label><h2>Подписка Figma</h2><p>14 октября</p></ion-label><ion-note slot="end">−186 000</ion-note></ion-item>
+<ion-item lines="none"><ion-label><h2>Возврат переплаты</h2><p>12 октября</p></ion-label><ion-note slot="end" color="success">+94 000</ion-note></ion-item>
+</ion-list>
+<div class="ion-padding"><ion-button expand="block">Новая операция</ion-button></div>
+</ion-content>
+<ion-tab-bar slot="bottom"><ion-tab-button selected><ion-icon name="home"></ion-icon><ion-label>Главная</ion-label></ion-tab-button>
+<ion-tab-button><ion-icon name="list"></ion-icon><ion-label>Операции</ion-label></ion-tab-button>
+<ion-tab-button><ion-icon name="bar-chart"></ion-icon><ion-label>Отчёты</ion-label></ion-tab-button>
+<ion-tab-button><ion-icon name="person"></ion-icon><ion-label>Профиль</ion-label></ion-tab-button></ion-tab-bar>
+</ion-app></body></html>

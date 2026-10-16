@@ -1,0 +1,33 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Framework7</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7-icons@5/css/framework7-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7@8/framework7-bundle.min.css">
+</head><body>
+<div id="app">
+<div class="view view-main">
+<div class="page">
+<div class="navbar"><div class="navbar-bg"></div><div class="navbar-inner"><div class="title">Кошелёк</div><div class="right"><a class="link icon-only"><i class="icon f7-icons">bell</i></a></div></div></div>
+<div class="toolbar tabbar tabbar-labels toolbar-bottom"><div class="toolbar-inner">
+<a class="tab-link tab-link-active"><i class="icon f7-icons">house_fill</i><span class="tabbar-label">Главная</span></a>
+<a class="tab-link"><i class="icon f7-icons">list_bullet</i><span class="tabbar-label">Операции</span></a>
+<a class="tab-link"><i class="icon f7-icons">chart_bar</i><span class="tabbar-label">Отчёты</span></a>
+<a class="tab-link"><i class="icon f7-icons">person</i><span class="tabbar-label">Профиль</span></a>
+</div></div>
+<div class="page-content">
+<div class="block-title">Период</div>
+<div class="block"><div class="segmented segmented-strong"><button class="button button-active">Месяц</button><button class="button">Квартал</button><button class="button">Год</button><span class="segmented-highlight"></span></div></div>
+<div class="card"><div class="card-header">Баланс по кассе</div>
+<div class="card-content card-content-padding"><div style="font-size:28px;font-weight:700">4 820 000 сум</div><div style="color:var(--f7-theme-color);margin-top:6px">↑ 12,4% к сентябрю</div></div></div>
+<div class="block-title">Последние операции</div>
+<div class="list list-strong list-outline inset media-list"><ul>
+<li><a class="item-link item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">Поступление от Argus</div><div class="item-after" style="color:#34c759">+1 200 000</div></div><div class="item-subtitle">Сегодня, 09:12</div></div></a></li>
+<li><a class="item-link item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">Аренда офиса</div><div class="item-after">−850 000</div></div><div class="item-subtitle">Вчера, 18:40</div></div></a></li>
+<li><a class="item-link item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">Подписка Figma</div><div class="item-after">−186 000</div></div><div class="item-subtitle">14 октября</div></div></a></li>
+<li><a class="item-link item-content"><div class="item-inner"><div class="item-title-row"><div class="item-title">Возврат переплаты</div><div class="item-after" style="color:#34c759">+94 000</div></div><div class="item-subtitle">12 октября</div></div></a></li>
+</ul></div>
+<div class="block"><a class="button button-fill button-large">Новая операция</a></div>
+</div></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/framework7@8/framework7-bundle.min.js"></script>
+<script>new Framework7({el:'#app',theme:'ios'});</script>
+</body></html>

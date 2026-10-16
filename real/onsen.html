@@ -1,0 +1,25 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Onsen UI</title>
+<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+</head><body>
+<ons-page>
+<ons-toolbar><div class="center">Кошелёк</div><div class="right"><ons-toolbar-button><ons-icon icon="md-notifications"></ons-icon></ons-toolbar-button></div></ons-toolbar>
+<div style="padding:14px">
+<ons-segment style="width:100%"><button>Месяц</button><button>Квартал</button><button>Год</button></ons-segment>
+</div>
+<ons-card><div class="title">Баланс по кассе</div><div class="content"><div style="font-size:28px;font-weight:700;margin:6px 0">4 820 000 сум</div><div style="color:#4caf50">↑ 12,4% к сентябрю</div></div></ons-card>
+<ons-list-header>Последние операции</ons-list-header>
+<ons-list>
+<ons-list-item><div class="center"><span class="list-item__title">Поступление от Argus</span><span class="list-item__subtitle">Сегодня, 09:12</span></div><div class="right" style="color:#4caf50">+1 200 000</div></ons-list-item>
+<ons-list-item><div class="center"><span class="list-item__title">Аренда офиса</span><span class="list-item__subtitle">Вчера, 18:40</span></div><div class="right">−850 000</div></ons-list-item>
+<ons-list-item><div class="center"><span class="list-item__title">Подписка Figma</span><span class="list-item__subtitle">14 октября</span></div><div class="right">−186 000</div></ons-list-item>
+<ons-list-item><div class="center"><span class="list-item__title">Возврат переплаты</span><span class="list-item__subtitle">12 октября</span></div><div class="right" style="color:#4caf50">+94 000</div></ons-list-item>
+</ons-list>
+<div style="padding:16px"><ons-button modifier="large">Новая операция</ons-button></div>
+<ons-bottom-toolbar style="display:flex;align-items:center;justify-content:space-around">
+<span>Главная</span><span>Операции</span><span>Отчёты</span><span>Профиль</span>
+</ons-bottom-toolbar>
+</ons-page></body></html>
