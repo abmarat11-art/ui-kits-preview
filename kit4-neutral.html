@@ -1,0 +1,54 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kit 4 — Neutral / shadcn</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;background:#fff;color:#09090b;padding-bottom:88px}
+.statusbar{height:34px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font-size:13px;font-weight:500;color:#71717a}
+header{display:flex;align-items:center;gap:12px;padding:8px 20px 16px;border-bottom:1px solid #f4f4f5}
+header h2{font-size:17px;font-weight:600;flex:1;letter-spacing:-.2px}
+.ic{width:36px;height:36px;border:1px solid #e4e4e7;border-radius:10px;display:grid;place-items:center;font-size:15px;color:#52525b}
+.tabs2{display:flex;gap:4px;background:#f4f4f5;border-radius:10px;padding:3px;margin:16px 20px 0}
+.tabs2 div{flex:1;text-align:center;font-size:13px;font-weight:500;padding:7px;border-radius:8px;color:#71717a}
+.tabs2 div.on{background:#fff;color:#09090b;font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.07)}
+.card{border:1px solid #e4e4e7;border-radius:14px;margin:16px 20px;padding:20px}
+.card .l{font-size:13px;color:#71717a;font-weight:500}
+.card .v{font-size:30px;font-weight:700;letter-spacing:-1px;margin-top:6px}
+.card .d{font-size:12.5px;color:#16a34a;font-weight:500;margin-top:4px}
+.bars{display:flex;gap:6px;align-items:flex-end;height:46px;margin-top:18px}
+.bars i{flex:1;background:#18181b;border-radius:3px}
+.bars i.m{background:#e4e4e7}
+.two{display:flex;gap:12px;margin:0 20px}
+.two .card{flex:1;margin:0;padding:15px}
+.two .card .v{font-size:19px;margin-top:3px;letter-spacing:-.4px}
+.hd{display:flex;justify-content:space-between;align-items:center;padding:24px 20px 10px}
+.hd b{font-size:15px;font-weight:600}
+.hd span{font-size:12px;color:#71717a;border:1px solid #e4e4e7;border-radius:8px;padding:4px 10px;font-weight:500}
+.item{display:flex;align-items:center;gap:13px;padding:13px 20px;border-top:1px solid #f4f4f5}
+.av{width:38px;height:38px;border-radius:999px;background:#f4f4f5;display:grid;place-items:center;font-size:16px;flex:none}
+.item .tx{flex:1;min-width:0}
+.item .tx b{display:block;font-size:14.5px;font-weight:500}
+.item .tx span{font-size:12.5px;color:#71717a}
+.badge{font-size:11px;font-weight:600;border-radius:999px;padding:3px 9px;margin-top:4px;display:inline-block}
+.item .am{font-size:14.5px;font-weight:600;white-space:nowrap}
+.btn{display:block;margin:20px;background:#18181b;color:#fff;text-align:center padding:0;padding:13px;border-radius:11px;font-size:14.5px;font-weight:600;text-align:center}
+.nav{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #e4e4e7;display:flex;padding:10px 0 22px}
+.nav a{flex:1;text-align:center;font-size:10.5px;color:#a1a1aa;text-decoration:none;font-weight:500}
+.nav a i{font-style:normal;display:block;font-size:19px;margin-bottom:3px}
+.nav a.on{color:#18181b;font-weight:600}
+</style></head><body>
+<div class="statusbar"><span>9:41</span><span>▮▮▮ ᯤ ▰</span></div>
+<header><h2>Обзор</h2><div class="ic">⌕</div><div class="ic">🔔</div></header>
+<div class="tabs2"><div class="on">Месяц</div><div>Квартал</div><div>Год</div></div>
+<div class="card"><div class="l">Баланс по кассе</div><div class="v">4 820 000 сум</div><div class="d">↑ 12,4% к сентябрю</div>
+<div class="bars"><i class="m" style="height:38%"></i><i class="m" style="height:60%"></i><i class="m" style="height:45%"></i><i style="height:76%"></i><i class="m" style="height:52%"></i><i style="height:95%"></i><i class="m" style="height:68%"></i></div></div>
+<div class="two"><div class="card"><div class="l">Приход</div><div class="v">6,2 млн</div></div><div class="card"><div class="l">Расход</div><div class="v">1,4 млн</div></div></div>
+<div class="hd"><b>Операции</b><span>Фильтр</span></div>
+<div class="item"><div class="av">↓</div><div class="tx"><b>Поступление от Argus</b><span>Сегодня, 09:12</span></div><div class="am" style="color:#16a34a">+1 200 000</div></div>
+<div class="item"><div class="av">🏢</div><div class="tx"><b>Аренда офиса</b><span>Вчера, 18:40</span><br><i class="badge" style="background:#f4f4f5;color:#52525b;font-style:normal">Регулярный</i></div><div class="am">−850 000</div></div>
+<div class="item"><div class="av">🎨</div><div class="tx"><b>Подписка Figma</b><span>14 октября</span></div><div class="am">−186 000</div></div>
+<div class="item"><div class="av">↩</div><div class="tx"><b>Возврат переплаты</b><span>12 октября</span></div><div class="am" style="color:#16a34a">+94 000</div></div>
+<div class="btn">Новая операция</div>
+<nav class="nav"><a class="on"><i>◉</i>Главная</a><a><i>☰</i>Операции</a><a><i>▤</i>Отчёты</a><a><i>◍</i>Профиль</a></nav>
+</body></html>
